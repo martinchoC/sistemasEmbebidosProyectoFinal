@@ -1,0 +1,7 @@
+<h3 class="text-themecolor">Control de la planta tiempo real</h3>
+<div class="row justify-content-center pt-5">
+  <div class="col-lg-8 align-self-center pb-3 contenedor">
+    <app-tabla [data]="this.dataSnapshot" [estadoTittle]="'Estado Actual'"></app-tabla>
+    <button class="btn btn-primary pull-right button-fix" type="button" (click)="saveData()">Guardar valores</button>
+  </div>
+</div>

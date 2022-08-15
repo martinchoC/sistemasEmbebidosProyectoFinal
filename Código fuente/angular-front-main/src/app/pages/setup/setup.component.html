@@ -1,0 +1,40 @@
+<h3 class="text-themecolor">Seteo de par&aacute;metros</h3>
+<div class="container d-h pt-5">
+  <div class="row justify-content-center center-block">
+      <div class="rounded col-md-8 pt-3 pb-3 sombra-columna" style="background-color: white;">
+        <form class="needs-validation" [formGroup]="formulario" (ngSubmit)="onSubmit()" novalidate>
+            <div class="col pt-3">
+              <label for="validationCustom01">Humedad del ambiente m&iacute;nima:</label>
+              <input type="number" min="20" max="80" class="form-control" id="validationCustom01" formControlName="humedadAmbienteMinima"  required>
+              <div class="invalid-feedback">
+                Looks bad!
+              </div>
+            </div>
+            <div class="col pt-3">
+              <label for="validationCustom02">Humedad del suelo m&aacute;xima:</label>
+              <input type="number" min="1" max="100" class="form-control" id="validationCustom02" formControlName="humedadSueloMaxima" required>
+              <div class="invalid-feedback">
+                Looks bad!
+              </div>
+            </div>
+            <div class="col pt-3">
+              <label for="validationCustom03">Humedad del suelo m&iacute;nima:</label>
+              <input type="number"  min="1" max="100" class="form-control" id="validationCustom03" formControlName="humedadSueloMinima"  required>
+              <div class="invalid-feedback">
+                Looks bad!
+              </div>
+            </div>
+            <div class="col pt-3">
+              <label for="validationCustom04">Temperatura m&aacute;xima:</label>
+              <input type="number" min="0" max="50" class="form-control" id="validationCustom04" formControlName="temperaturaMaxima"  required>
+              <div class="invalid-feedback">
+                Looks bad!
+              </div>
+            </div>
+          <div class="col pt-3">
+            <button class="btn btn-primary pull-right" type="submit">Actualizar par&aacute;metros</button>
+          </div>
+        </form>
+      </div>
+  </div>
+</div>

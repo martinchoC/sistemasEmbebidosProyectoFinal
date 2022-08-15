@@ -1,0 +1,13 @@
+.contenedor{
+  border-radius: 1.25rem!important;
+  box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.06);
+  padding-left: 0!important;
+  padding-right: 0!important;
+}
+
+.button-fix
+{
+  margin-right: 2%;
+  background: #242a33;
+  border-color: #242a33;
+}

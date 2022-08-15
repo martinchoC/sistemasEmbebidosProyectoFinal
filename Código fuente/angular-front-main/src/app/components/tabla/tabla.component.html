@@ -1,0 +1,38 @@
+<table class="table table-hover">
+  <thead class="table-dark">
+    <tr>
+      <th scope="col" class="header-color" style="border-top-left-radius: 10px;">Par&aacute;metro</th>
+      <th scope="col" class="header-color" style="border-top-right-radius: 10px;">{{estado}}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Estado de la bomba</th>
+      <td>{{dataSnapshot.bomba}}</td>
+    </tr>
+    <tr>
+      <th scope="row">Estado de la l&aacute;mpara</th>
+      <td>{{dataSnapshot.luz}}</td>
+    </tr>
+    <tr>
+      <th scope="row">&Uacute;ltima Actualizaci&oacute;n</th>
+      <td>{{dataSnapshot.diahora}}</td>
+    </tr>
+    <tr>
+      <th scope="row">Humedad del Suelo</th>
+      <td>{{dataSnapshot.humedad_suelo}}%</td>
+    </tr>
+    <tr>
+      <th scope="row">Humedad ambiente</th>
+      <td>{{dataSnapshot.porcentaje_humedad_ambiente}}%</td>
+    </tr>
+    <tr>
+      <th scope="row">Sensaci&oacute;n t&eacute;rmica</th>
+      <td>{{dataSnapshot.sensacion_termica.toFixed(2)}}&#8451;</td>
+    </tr>
+    <tr>
+      <th scope="row">Temperatura ambiente</th>
+      <td>{{dataSnapshot.temperatura_ambiente.toFixed(2)}}&#8451;</td>
+    </tr>
+  </tbody>
+</table>
